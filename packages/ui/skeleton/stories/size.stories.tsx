@@ -46,7 +46,7 @@ export const Size = () => {
       <div style={{ display: 'flex', alignItems: 'center', gap: 24 }}>
         <div style={{ textAlign: 'center' }}>
           <Skeleton type="icon" size="sm" />
-          <p style={{ marginTop: 8, fontSize: 14, color: '#666' }}>sm (42px)</p>
+          <p style={{ marginTop: 8, fontSize: 14, color: '#666' }}>sm (40px)</p>
         </div>
         <div style={{ textAlign: 'center' }}>
           <Skeleton type="icon" size="md" />

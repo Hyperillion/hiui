@@ -19,7 +19,7 @@ export const SkeletonGroup = forwardRef<HTMLDivElement | null, SkeletonGroupProp
       className,
       children,
       content,
-      layout = 'vertical',
+      direction = 'column',
       gap,
       visible = true,
       animation,
@@ -28,7 +28,7 @@ export const SkeletonGroup = forwardRef<HTMLDivElement | null, SkeletonGroupProp
     },
     ref
   ) => {
-    const cls = cx(prefixCls, className, `${prefixCls}--layout-${layout}`)
+    const cls = cx(prefixCls, className, `${prefixCls}--direction-${direction}`)
 
     const { style, ...restProps } = rest
 
@@ -82,7 +82,7 @@ export const SkeletonGroup = forwardRef<HTMLDivElement | null, SkeletonGroupProp
         className={cls}
         style={{
           gap,
-          ...(layout === 'horizontal' ? { alignItems } : {}),
+          ...(direction === 'row' ? { alignItems } : {}),
           ...style,
         }}
         {...restProps}
@@ -104,9 +104,9 @@ export interface SkeletonGroupProps extends HiBaseHTMLProps<'div'> {
   content?: React.ReactNode
   /**
    * 布局方向
-   * @default 'vertical'
+   * @default 'column'
    */
-  layout?: 'vertical' | 'horizontal'
+  direction?: 'column' | 'row'
   /**
    * 子元素间距，可以是数字（px）或字符串（如 '12px', '1rem'）
    */

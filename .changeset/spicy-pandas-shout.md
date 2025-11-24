@@ -1,5 +1,6 @@
 ---
+"@hi-ui/hiui": minor
 "@hi-ui/skeleton": major
 ---
 
-new added components
+feat(Skeleton): New Component Skeleton 新增组件骨架屏 (5.0)

@@ -21,7 +21,7 @@ export const WidthAndHeight = () => {
           <p style={{ color: '#666', marginBottom: 16, fontSize: 14 }}>
             使用 style 属性设置不同宽度的文本骨架屏
           </p>
-          <Skeleton.Group layout="vertical" gap={12} animation="wave">
+          <Skeleton.Group direction="column" gap={12} animation="wave">
             <div>
               <p style={{ fontSize: 12, color: '#999', marginBottom: 4 }}>width: 100%</p>
               <Skeleton type="text" width="100%" />
@@ -56,7 +56,7 @@ export const WidthAndHeight = () => {
           <p style={{ color: '#666', marginBottom: 16, fontSize: 14 }}>
             通过设置 height 可以模拟不同字体大小的文本
           </p>
-          <Skeleton.Group layout="vertical" gap={16} animation="wave">
+          <Skeleton.Group direction="column" gap={16} animation="wave">
             <div>
               <p style={{ fontSize: 12, color: '#999', marginBottom: 4 }}>
                 height: 12px (小号文本)
@@ -204,7 +204,7 @@ export const WidthAndHeight = () => {
           <p style={{ color: '#666', marginBottom: 16, fontSize: 14 }}>
             支持各种 CSS 单位：px、%、rem、em、vw 等
           </p>
-          <Skeleton.Group layout="vertical" gap={12} animation="wave">
+          <Skeleton.Group direction="column" gap={12} animation="wave">
             <div>
               <p style={{ fontSize: 12, color: '#999', marginBottom: 4 }}>
                 width: &apos;50%&apos; (百分比)
@@ -253,12 +253,12 @@ export const WidthAndHeight = () => {
                 padding: 16,
               }}
             >
-              <Skeleton.Group layout="vertical" gap={12} animation="wave">
+              <Skeleton.Group direction="column" gap={12} animation="wave">
                 <Skeleton type="image" width="100%" height={180} />
                 <Skeleton type="text" width="80%" height={20} />
                 <Skeleton type="text" width="100%" height={14} />
                 <Skeleton type="text" width="90%" height={14} />
-                <Skeleton.Group layout="horizontal" gap={8}>
+                <Skeleton.Group direction="row" gap={8}>
                   <Skeleton type="avatar" width={24} height={24} />
                   <Skeleton type="text" width={100} height={12} />
                 </Skeleton.Group>
@@ -274,7 +274,7 @@ export const WidthAndHeight = () => {
                 padding: 16,
               }}
             >
-              <Skeleton.Group layout="vertical" gap={16} animation="wave">
+              <Skeleton.Group direction="column" gap={16} animation="wave">
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                   <Skeleton type="avatar" width={80} height={80} />
                 </div>
@@ -282,7 +282,7 @@ export const WidthAndHeight = () => {
                   <Skeleton type="text" width={120} height={18} style={{ margin: '0 auto 8px' }} />
                   <Skeleton type="text" width={180} height={14} style={{ margin: '0 auto' }} />
                 </div>
-                <Skeleton.Group layout="horizontal" gap={8}>
+                <Skeleton.Group direction="row" gap={8}>
                   <Skeleton type="text" height={32} style={{ flex: 1 }} />
                   <Skeleton type="text" height={32} style={{ flex: 1 }} />
                 </Skeleton.Group>
@@ -298,9 +298,9 @@ export const WidthAndHeight = () => {
                 overflow: 'hidden',
               }}
             >
-              <Skeleton.Group layout="vertical" gap={0} animation="wave">
+              <Skeleton.Group direction="column" gap={0} animation="wave">
                 <Skeleton type="image" width="100%" height={200} />
-                <Skeleton.Group layout="vertical" gap={0} style={{ padding: 16 }}>
+                <Skeleton.Group direction="column" gap={0} style={{ padding: 16 }}>
                   <Skeleton type="text" width="70%" height={16} style={{ marginBottom: 8 }} />
                   <Skeleton type="text" width="40%" height={24} style={{ marginBottom: 12 }} />
                   <Skeleton type="text" width="100%" height={40} />

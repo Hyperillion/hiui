@@ -1,6 +1,6 @@
 {
   "name": "@hi-ui/skeleton",
-  "version": "4.0.0-alpha.0",
+  "version": "4.0.0",
   "description": "A sub-package for @hi-ui/hiui.",
   "keywords": [],
   "author": "HiUI <mi-hiui@xiaomi.com>",
@@ -19,6 +19,7 @@
   "typings": "lib/types/index.d.ts",
   "exports": {
     ".": {
+      "types": "./lib/types/index.d.ts",
       "require": "./lib/cjs/index.js",
       "default": "./lib/esm/index.js"
     }
@@ -54,7 +55,6 @@
   "devDependencies": {
     "@hi-ui/core": "^4.0.0",
     "@hi-ui/core-css": "^4.0.0",
-
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   }
