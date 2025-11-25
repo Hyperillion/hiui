@@ -33,7 +33,7 @@
 | ---------- | -------------------------------------------------------- | ----------------- | --------------------------------------- | ---------- |
 | visible    | 加载状态，控制骨架屏与实际内容的切换                     | boolean           | true \| false                           | true       |
 | content    | 加载完成后显示的实际内容                                 | React.ReactNode   | -                                       | -          |
-| layout     | 布局方向                                                 | string            | 'vertical' \| 'horizontal'              | 'vertical' |
+| direction     | 布局方向                                                 | string            | 'column' \| 'row'              | 'column' |
 | gap        | 子元素间距，可以是数字（px）或字符串（如 '12px', '1rem'）| number \| string  | -                                       | -          |
 | animation  | 统一设置所有嵌套子组件的动画效果                         | string            | 'pulse' \| 'wave' \| 'none'             | -          |
 | alignItems | 水平布局时子元素的对齐方式                               | string            | 'start' \| 'center' \| 'end' \| 'stretch' | 'center'   |

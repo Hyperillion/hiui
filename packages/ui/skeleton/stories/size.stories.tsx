@@ -2,14 +2,13 @@ import React from 'react'
 import Skeleton from '../src'
 
 /**
- * @title 尺寸
- * @desc 通过 size 属性控制骨架屏的尺寸，支持 sm、md、lg 三种预设尺寸
+ * @title 不同尺寸
+ * @desc 通过 size 属性控制骨架屏的尺寸
  */
 export const Size = () => {
   return (
     <>
       <h1>Size 尺寸</h1>
-
       <h2>text 文本骨架尺寸</h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
         <div>

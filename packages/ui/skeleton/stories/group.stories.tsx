@@ -32,14 +32,13 @@ export const Group = () => {
             }
             animation="wave"
           >
-            {/* 骨架屏模板 */}
             <Skeleton height={24} width={'60%'} />
             <Skeleton />
             <Skeleton width={'80%'} />
           </Skeleton.Group>
+
           <h3>用法2: 包覆式（children 传递内容）</h3>
           <Skeleton.Group direction="column" gap={12} visible={visible1} animation="wave">
-            {/* 骨架屏模板 */}
             <Skeleton height={24} width={'60%'}>
               <h3 style={{ margin: '0 0 8px 0' }}>这是实际的标题</h3>
             </Skeleton>
@@ -50,10 +49,10 @@ export const Group = () => {
               <p style={{ margin: 0 }}>这是第二段实际内容，包含更多信息。</p>
             </Skeleton>
           </Skeleton.Group>
+
           <h3>用法3: 独立式（内容放在组件外）</h3>
           {visible1 ? (
             <Skeleton.Group direction="column" gap={12} visible={visible1} animation="wave">
-              {/* 骨架屏模板 */}
               <Skeleton height={24} width={'60%'} />
               <Skeleton />
               <Skeleton width={'80%'} />
@@ -142,7 +141,6 @@ export const Group = () => {
               </div>
             }
           >
-            {/* 骨架屏模板 */}
             <Skeleton.Group direction="row" gap={16} alignItems="start">
               {/* 左侧 */}
               <Skeleton.Group direction="column" gap={12}>
